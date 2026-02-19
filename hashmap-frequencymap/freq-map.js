@@ -1,8 +1,8 @@
 const arr = [1, 1, 2, 3, 3, 3];
-const freq = new Map();
+const freq = {};
 
 for(let item of arr){
-    freq.set(item, (freq.get(item) || 0) + 1)
+    freq[item] = (freq[item] || 0) + 1
 }
 
 console.log(freq)
